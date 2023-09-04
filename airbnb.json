@@ -4,7 +4,7 @@
     "node": true
   },
   "globals": {},
-  "parser": "/Users/bill/oss/eslint-framework-comparison/node_modules/@typescript-eslint/parser/dist/index.js",
+  "parser": "/Users/bill/oss/eslint-config-comparison/node_modules/@typescript-eslint/parser/dist/index.js",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true,
@@ -18,7 +18,8 @@
     "import",
     "react",
     "jsx-a11y",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "react-hooks"
   ],
   "rules": {
     "curly": [
@@ -968,6 +969,12 @@
     "react/jsx-space-before-closing": [
       "off",
       "always"
+    ],
+    "react-hooks/rules-of-hooks": [
+      "error"
+    ],
+    "react-hooks/exhaustive-deps": [
+      "error"
     ],
     "react/jsx-filename-extension": [
       "error",
