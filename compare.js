@@ -19,7 +19,7 @@ const configurations = [
     rules: JSON.parse(fs.readFileSync('google.json')).rules
   },
   {
-    name: "standard",
+    name: "standard with typescript and react",
     rules: JSON.parse(fs.readFileSync('standard.json')).rules
   },
 ];

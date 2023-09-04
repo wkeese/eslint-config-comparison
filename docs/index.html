@@ -22,7 +22,7 @@ table {
 <tr><td>react/recommended & react-hooks/recommended</td><td>23</td></tr>
 <tr><td>airbnb</td><td>256</td></tr>
 <tr><td>google</td><td>75</td></tr>
-<tr><td>standard</td><td>162</td></tr>
+<tr><td>standard with typescript and react</td><td>193</td></tr>
 </table>
 
 <h2>Details</h2>
@@ -36,7 +36,7 @@ table {
 }
 </style>
 <table class="rulesTable">
-<tr><th>Rule</th><th>eslint:recommended & @typescript-eslint/recommended</th><th>react/recommended & react-hooks/recommended</th><th>airbnb</th><th>google</th><th>standard</th></tr>
+<tr><th>Rule</th><th>eslint:recommended & @typescript-eslint/recommended</th><th>react/recommended & react-hooks/recommended</th><th>airbnb</th><th>google</th><th>standard with typescript and react</th></tr>
 
 <tr><td>@typescript-eslint/adjacent-overload-signatures</td><td></td><td></td><td></td><td></td><td>error</td></tr>
 <tr><td>@typescript-eslint/array-type</td><td></td><td></td><td></td><td></td><td>error</td></tr>
@@ -315,8 +315,8 @@ table {
 <tr><td>prettier/prettier</td><td></td><td></td><td></td><td>error</td><td></td></tr>
 <tr><td>promise/param-names</td><td></td><td></td><td></td><td></td><td>error</td></tr>
 <tr><td>radix</td><td></td><td></td><td>error</td><td></td><td></td></tr>
-<tr><td>react-hooks/exhaustive-deps</td><td></td><td>warn</td><td>error</td><td></td><td></td></tr>
-<tr><td>react-hooks/rules-of-hooks</td><td></td><td>error</td><td>error</td><td></td><td></td></tr>
+<tr><td>react-hooks/exhaustive-deps</td><td></td><td>warn</td><td>error</td><td></td><td>warn</td></tr>
+<tr><td>react-hooks/rules-of-hooks</td><td></td><td>error</td><td>error</td><td></td><td>error</td></tr>
 <tr><td>react/button-has-type</td><td></td><td></td><td>error</td><td></td><td></td></tr>
 <tr><td>react/default-props-match-prop-types</td><td></td><td></td><td>error</td><td></td><td></td></tr>
 <tr><td>react/destructuring-assignment</td><td></td><td></td><td>error</td><td></td><td></td></tr>
@@ -324,56 +324,57 @@ table {
 <tr><td>react/forbid-foreign-prop-types</td><td></td><td></td><td>warn</td><td></td><td></td></tr>
 <tr><td>react/forbid-prop-types</td><td></td><td></td><td>error</td><td></td><td></td></tr>
 <tr><td>react/function-component-definition</td><td></td><td></td><td>error</td><td></td><td></td></tr>
-<tr><td>react/jsx-boolean-value</td><td></td><td></td><td>error</td><td></td><td></td></tr>
-<tr><td>react/jsx-curly-brace-presence</td><td></td><td></td><td>error</td><td></td><td></td></tr>
+<tr><td>react/jsx-boolean-value</td><td></td><td></td><td>error</td><td></td><td>error</td></tr>
+<tr><td>react/jsx-curly-brace-presence</td><td></td><td></td><td>error</td><td></td><td>error</td></tr>
 <tr><td>react/jsx-filename-extension</td><td></td><td></td><td>error</td><td></td><td></td></tr>
-<tr><td>react/jsx-fragments</td><td></td><td></td><td>error</td><td></td><td></td></tr>
-<tr><td>react/jsx-key</td><td></td><td>2</td><td></td><td></td><td></td></tr>
-<tr><td>react/jsx-no-bind</td><td></td><td></td><td>error</td><td></td><td></td></tr>
-<tr><td>react/jsx-no-comment-textnodes</td><td></td><td>2</td><td>error</td><td></td><td></td></tr>
+<tr><td>react/jsx-fragments</td><td></td><td></td><td>error</td><td></td><td>error</td></tr>
+<tr><td>react/jsx-handler-names</td><td></td><td></td><td></td><td></td><td>error</td></tr>
+<tr><td>react/jsx-key</td><td></td><td>2</td><td></td><td></td><td>error</td></tr>
+<tr><td>react/jsx-no-bind</td><td></td><td></td><td>error</td><td></td><td>error</td></tr>
+<tr><td>react/jsx-no-comment-textnodes</td><td></td><td>2</td><td>error</td><td></td><td>error</td></tr>
 <tr><td>react/jsx-no-constructed-context-values</td><td></td><td></td><td>error</td><td></td><td></td></tr>
-<tr><td>react/jsx-no-duplicate-props</td><td></td><td>2</td><td>error</td><td></td><td></td></tr>
+<tr><td>react/jsx-no-duplicate-props</td><td></td><td>2</td><td>error</td><td></td><td>error</td></tr>
 <tr><td>react/jsx-no-script-url</td><td></td><td></td><td>error</td><td></td><td></td></tr>
-<tr><td>react/jsx-no-target-blank</td><td></td><td>2</td><td>error</td><td></td><td></td></tr>
-<tr><td>react/jsx-no-undef</td><td></td><td>2</td><td>error</td><td></td><td></td></tr>
+<tr><td>react/jsx-no-target-blank</td><td></td><td>2</td><td>error</td><td></td><td>error</td></tr>
+<tr><td>react/jsx-no-undef</td><td></td><td>2</td><td>error</td><td></td><td>error</td></tr>
 <tr><td>react/jsx-no-useless-fragment</td><td></td><td></td><td>error</td><td></td><td></td></tr>
-<tr><td>react/jsx-pascal-case</td><td></td><td></td><td>error</td><td></td><td></td></tr>
+<tr><td>react/jsx-pascal-case</td><td></td><td></td><td>error</td><td></td><td>error</td></tr>
 <tr><td>react/jsx-props-no-spreading</td><td></td><td></td><td>error</td><td></td><td></td></tr>
-<tr><td>react/jsx-uses-react</td><td></td><td>2</td><td>error</td><td></td><td></td></tr>
-<tr><td>react/jsx-uses-vars</td><td></td><td>2</td><td>error</td><td></td><td></td></tr>
+<tr><td>react/jsx-uses-react</td><td></td><td>2</td><td>error</td><td></td><td>error</td></tr>
+<tr><td>react/jsx-uses-vars</td><td></td><td>2</td><td>error</td><td></td><td>error</td></tr>
 <tr><td>react/no-access-state-in-setstate</td><td></td><td></td><td>error</td><td></td><td></td></tr>
 <tr><td>react/no-array-index-key</td><td></td><td></td><td>error</td><td></td><td></td></tr>
 <tr><td>react/no-arrow-function-lifecycle</td><td></td><td></td><td>error</td><td></td><td></td></tr>
-<tr><td>react/no-children-prop</td><td></td><td>2</td><td>error</td><td></td><td></td></tr>
+<tr><td>react/no-children-prop</td><td></td><td>2</td><td>error</td><td></td><td>error</td></tr>
 <tr><td>react/no-danger</td><td></td><td></td><td>warn</td><td></td><td></td></tr>
-<tr><td>react/no-danger-with-children</td><td></td><td>2</td><td>error</td><td></td><td></td></tr>
-<tr><td>react/no-deprecated</td><td></td><td>2</td><td>error</td><td></td><td></td></tr>
-<tr><td>react/no-did-update-set-state</td><td></td><td></td><td>error</td><td></td><td></td></tr>
-<tr><td>react/no-direct-mutation-state</td><td></td><td>2</td><td></td><td></td><td></td></tr>
-<tr><td>react/no-find-dom-node</td><td></td><td>2</td><td>error</td><td></td><td></td></tr>
+<tr><td>react/no-danger-with-children</td><td></td><td>2</td><td>error</td><td></td><td>error</td></tr>
+<tr><td>react/no-deprecated</td><td></td><td>2</td><td>error</td><td></td><td>error</td></tr>
+<tr><td>react/no-did-update-set-state</td><td></td><td></td><td>error</td><td></td><td>error</td></tr>
+<tr><td>react/no-direct-mutation-state</td><td></td><td>2</td><td></td><td></td><td>error</td></tr>
+<tr><td>react/no-find-dom-node</td><td></td><td>2</td><td>error</td><td></td><td>error</td></tr>
 <tr><td>react/no-invalid-html-attribute</td><td></td><td></td><td>error</td><td></td><td></td></tr>
-<tr><td>react/no-is-mounted</td><td></td><td>2</td><td>error</td><td></td><td></td></tr>
+<tr><td>react/no-is-mounted</td><td></td><td>2</td><td>error</td><td></td><td>error</td></tr>
 <tr><td>react/no-namespace</td><td></td><td></td><td>error</td><td></td><td></td></tr>
 <tr><td>react/no-redundant-should-component-update</td><td></td><td></td><td>error</td><td></td><td></td></tr>
-<tr><td>react/no-render-return-value</td><td></td><td>2</td><td>error</td><td></td><td></td></tr>
-<tr><td>react/no-string-refs</td><td></td><td>2</td><td>error</td><td></td><td></td></tr>
+<tr><td>react/no-render-return-value</td><td></td><td>2</td><td>error</td><td></td><td>error</td></tr>
+<tr><td>react/no-string-refs</td><td></td><td>2</td><td>error</td><td></td><td>error</td></tr>
 <tr><td>react/no-this-in-sfc</td><td></td><td></td><td>error</td><td></td><td></td></tr>
 <tr><td>react/no-typos</td><td></td><td></td><td>error</td><td></td><td></td></tr>
-<tr><td>react/no-unescaped-entities</td><td></td><td>2</td><td>error</td><td></td><td></td></tr>
-<tr><td>react/no-unknown-property</td><td></td><td>2</td><td>error</td><td></td><td></td></tr>
+<tr><td>react/no-unescaped-entities</td><td></td><td>2</td><td>error</td><td></td><td>error</td></tr>
+<tr><td>react/no-unknown-property</td><td></td><td>2</td><td>error</td><td></td><td>error</td></tr>
 <tr><td>react/no-unstable-nested-components</td><td></td><td></td><td>error</td><td></td><td></td></tr>
 <tr><td>react/no-unused-class-component-methods</td><td></td><td></td><td>error</td><td></td><td></td></tr>
-<tr><td>react/no-unused-prop-types</td><td></td><td></td><td>error</td><td></td><td></td></tr>
+<tr><td>react/no-unused-prop-types</td><td></td><td></td><td>error</td><td></td><td>error</td></tr>
 <tr><td>react/no-unused-state</td><td></td><td></td><td>error</td><td></td><td></td></tr>
 <tr><td>react/no-will-update-set-state</td><td></td><td></td><td>error</td><td></td><td></td></tr>
 <tr><td>react/prefer-es6-class</td><td></td><td></td><td>error</td><td></td><td></td></tr>
 <tr><td>react/prefer-exact-props</td><td></td><td></td><td>error</td><td></td><td></td></tr>
 <tr><td>react/prefer-stateless-function</td><td></td><td></td><td>error</td><td></td><td></td></tr>
-<tr><td>react/prop-types</td><td></td><td>2</td><td>error</td><td></td><td></td></tr>
-<tr><td>react/react-in-jsx-scope</td><td></td><td>2</td><td>error</td><td></td><td></td></tr>
+<tr><td>react/prop-types</td><td></td><td>2</td><td>error</td><td></td><td>error</td></tr>
+<tr><td>react/react-in-jsx-scope</td><td></td><td>2</td><td>error</td><td></td><td>error</td></tr>
 <tr><td>react/require-default-props</td><td></td><td></td><td>error</td><td></td><td></td></tr>
-<tr><td>react/require-render-return</td><td></td><td>2</td><td>error</td><td></td><td></td></tr>
-<tr><td>react/self-closing-comp</td><td></td><td></td><td>error</td><td></td><td></td></tr>
+<tr><td>react/require-render-return</td><td></td><td>2</td><td>error</td><td></td><td>error</td></tr>
+<tr><td>react/self-closing-comp</td><td></td><td></td><td>error</td><td></td><td>error</td></tr>
 <tr><td>react/sort-comp</td><td></td><td></td><td>error</td><td></td><td></td></tr>
 <tr><td>react/state-in-constructor</td><td></td><td></td><td>error</td><td></td><td></td></tr>
 <tr><td>react/static-property-placement</td><td></td><td></td><td>error</td><td></td><td></td></tr>

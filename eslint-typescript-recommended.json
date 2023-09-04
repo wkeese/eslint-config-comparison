@@ -1,7 +1,7 @@
 {
   "env": {},
   "globals": {},
-  "parser": "/Users/bill/oss/eslint-framework-comparison/node_modules/@typescript-eslint/parser/dist/index.js",
+  "parser": "/Users/bill/oss/eslint-config-comparison/node_modules/@typescript-eslint/parser/dist/index.js",
   "parserOptions": {
     "sourceType": "module"
   },

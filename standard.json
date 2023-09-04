@@ -8,20 +8,22 @@
     "navigator": "readonly",
     "window": "readonly"
   },
-  "parser": "/Users/bill/oss/eslint-framework-comparison/node_modules/@typescript-eslint/parser/dist/index.js",
+  "parser": "/Users/bill/oss/eslint-config-comparison/node_modules/@typescript-eslint/parser/dist/index.js",
   "parserOptions": {
-    "project": true,
-    "ecmaVersion": 2022,
+    "ecmaVersion": 2021,
     "ecmaFeatures": {
       "jsx": true
     },
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": true
   },
   "plugins": [
     "promise",
     "n",
     "import",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "react-hooks",
+    "react"
   ],
   "rules": {
     "curly": [
@@ -230,7 +232,8 @@
       }
     ],
     "jsx-quotes": [
-      "off"
+      "off",
+      "prefer-single"
     ],
     "key-spacing": [
       "off",
@@ -589,28 +592,51 @@
       "off"
     ],
     "react/jsx-closing-bracket-location": [
-      "off"
+      "off",
+      "tag-aligned"
     ],
     "react/jsx-closing-tag-location": [
       "off"
     ],
     "react/jsx-curly-newline": [
-      "off"
+      "off",
+      {
+        "multiline": "consistent",
+        "singleline": "consistent"
+      }
     ],
     "react/jsx-curly-spacing": [
-      "off"
+      "off",
+      {
+        "attributes": {
+          "when": "never",
+          "allowMultiline": true
+        },
+        "children": {
+          "when": "never",
+          "allowMultiline": true
+        }
+      }
     ],
     "react/jsx-equals-spacing": [
-      "off"
+      "off",
+      "never"
     ],
     "react/jsx-first-prop-new-line": [
-      "off"
+      "off",
+      "multiline-multiprop"
     ],
     "react/jsx-indent": [
-      "off"
+      "off",
+      2,
+      {
+        "checkAttributes": false,
+        "indentLogicalExpressions": true
+      }
     ],
     "react/jsx-indent-props": [
-      "off"
+      "off",
+      2
     ],
     "react/jsx-max-props-per-line": [
       "off"
@@ -625,10 +651,25 @@
       "off"
     ],
     "react/jsx-tag-spacing": [
-      "off"
+      "off",
+      {
+        "closingSlash": "never",
+        "beforeSelfClosing": "always",
+        "afterOpening": "never",
+        "beforeClosing": "never"
+      }
     ],
     "react/jsx-wrap-multilines": [
-      "off"
+      "off",
+      {
+        "declaration": "parens-new-line",
+        "assignment": "parens-new-line",
+        "return": "parens-new-line",
+        "arrow": "ignore",
+        "condition": "ignore",
+        "logical": "ignore",
+        "prop": "ignore"
+      }
     ],
     "standard/array-bracket-even-spacing": [
       "off"
@@ -806,6 +847,136 @@
     ],
     "react/jsx-space-before-closing": [
       "off"
+    ],
+    "react/jsx-no-bind": [
+      "error",
+      {
+        "allowArrowFunctions": true,
+        "allowBind": false,
+        "ignoreRefs": true,
+        "allowFunctions": false,
+        "ignoreDOMComponents": false
+      }
+    ],
+    "react/no-did-update-set-state": [
+      "error"
+    ],
+    "react/no-unknown-property": [
+      "error"
+    ],
+    "react/no-unused-prop-types": [
+      "error"
+    ],
+    "react/prop-types": [
+      "error"
+    ],
+    "react/react-in-jsx-scope": [
+      "error"
+    ],
+    "react-hooks/rules-of-hooks": [
+      "error"
+    ],
+    "react-hooks/exhaustive-deps": [
+      "warn"
+    ],
+    "react/jsx-boolean-value": [
+      "error"
+    ],
+    "react/jsx-curly-brace-presence": [
+      "error",
+      {
+        "props": "never",
+        "children": "never"
+      }
+    ],
+    "react/jsx-fragments": [
+      "error",
+      "syntax"
+    ],
+    "react/jsx-handler-names": [
+      "error"
+    ],
+    "react/jsx-key": [
+      "error",
+      {
+        "checkFragmentShorthand": true,
+        "checkKeyMustBeforeSpread": false,
+        "warnOnDuplicates": false
+      }
+    ],
+    "react/jsx-no-comment-textnodes": [
+      "error"
+    ],
+    "react/jsx-no-duplicate-props": [
+      "error"
+    ],
+    "react/jsx-no-target-blank": [
+      "error",
+      {
+        "enforceDynamicLinks": "always",
+        "links": true,
+        "forms": false
+      }
+    ],
+    "react/jsx-no-undef": [
+      "error",
+      {
+        "allowGlobals": true
+      }
+    ],
+    "react/jsx-pascal-case": [
+      "error",
+      {
+        "allowAllCaps": false
+      }
+    ],
+    "react/jsx-uses-react": [
+      "error"
+    ],
+    "react/jsx-uses-vars": [
+      "error"
+    ],
+    "react/no-children-prop": [
+      "error"
+    ],
+    "react/no-danger-with-children": [
+      "error"
+    ],
+    "react/no-deprecated": [
+      "error"
+    ],
+    "react/no-direct-mutation-state": [
+      "error"
+    ],
+    "react/no-find-dom-node": [
+      "error"
+    ],
+    "react/no-is-mounted": [
+      "error"
+    ],
+    "react/no-string-refs": [
+      "error",
+      {
+        "noTemplateLiterals": true
+      }
+    ],
+    "react/no-unescaped-entities": [
+      "error",
+      {
+        "forbid": [
+          ">",
+          "}"
+        ]
+      }
+    ],
+    "react/no-render-return-value": [
+      "error"
+    ],
+    "react/require-render-return": [
+      "error"
+    ],
+    "react/self-closing-comp": [
+      "error"
     ],
     "no-undef": [
       "off"
@@ -1611,6 +1782,13 @@
       "error"
     ]
   },
-  "settings": {},
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "linkComponents": [
+      "Link"
+    ]
+  },
   "ignorePatterns": []
 }

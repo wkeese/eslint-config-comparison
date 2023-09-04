@@ -51,7 +51,7 @@
     "module": "readonly",
     "require": "readonly"
   },
-  "parser": "/Users/bill/oss/eslint-framework-comparison/node_modules/gts/node_modules/@typescript-eslint/parser/dist/index.js",
+  "parser": "/Users/bill/oss/eslint-config-comparison/node_modules/gts/node_modules/@typescript-eslint/parser/dist/index.js",
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
