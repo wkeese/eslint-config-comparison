@@ -1,3 +1,7 @@
+// Google configuration with Typescript
+//
+// npm install --save-dev gts eslint-config-prettier
+
 module.exports = {
   "extends": [
     "./node_modules/gts",

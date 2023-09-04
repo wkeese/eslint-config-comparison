@@ -1,6 +1,10 @@
+// StandardJS configuration with Typescript and React support.
+//
+// npm install --save-dev eslint-config-standard-with-typescript eslint-config-standard-jsx eslint-config-standard-react eslint-config-prettier
+
 module.exports = {
   "extends": [
-    "eslint-config-standard-with-typescript",
+    "standard-with-typescript",
     "standard-jsx",
     "standard-react",
 
