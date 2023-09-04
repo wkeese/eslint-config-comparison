@@ -16,5 +16,7 @@ npx eslint --config .eslintrc.google.js --print-config test.ts > google.json
 And then I generated the report from
 
 ```shell
-node compare.js > result.html
+node compare.js > docs/index.html
 ```
+
+And then published from https://github.com/wkeese/eslint-config-comparison/settings/pages.
