@@ -1,6 +1,6 @@
 # ESLint configuration comparison
 
-See [result.html](./result.html) for the output.
+See https://wkeese.github.io/eslint-config-comparison/ for the output.
 
 I created the data and ran the report via
 
